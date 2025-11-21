@@ -1,10 +1,23 @@
+.profiel {
+    width: 80%;
+    background-color: #B9D6F2;
+    margin: 50px auto;
+    display: flex;
+    align-items: center;
+    gap: 40px;
+    border-radius: 10px;
+    text-align: center;
+    padding: 10px;
+}
+.about-tekst{
+    flex: 1;
+}
 .ronde-afbeelding {
+    float: left;
+    margin: 0 1rem 1rem 0;
     border-radius: 20px;
     height: auto;
     object-fit: cover;
-    margin-left: auto;
-    margin-right: auto;
-    margin-bottom: auto;
     width: 200px;
     flex-flow: row wrap;
     display: flex;
@@ -16,9 +29,6 @@
 
 }
 h2, h3 {
-    text-align: center;
-}
-.Hoofd-titel {
     text-align: center;
 }
 P {
