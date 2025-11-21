@@ -1,0 +1,29 @@
+.ronde-afbeelding {
+    border-radius: 20px;
+    height: auto;
+    object-fit: cover;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: auto;
+    width: 200px;
+}
+h2, h3 {
+    text-align: center;
+}
+.Hoofd-titel {
+    padding-top: 30px;
+    text-align: center;
+}
+P {
+    text-align: center;
+}
+.flex-list{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.flex-list li {
+    text-align: center;
+    list-style-position: inside;
+}
