@@ -1,6 +1,10 @@
+body{
+    background-color: #3E6680;
+    color: white;
+}
 .profiel {
     width: 80%;
-    background-color: #B9D6F2;
+    background-color: #4BB3FD;
     margin: 50px auto;
     display: flex;
     align-items: center;
@@ -8,13 +12,69 @@
     border-radius: 10px;
     text-align: center;
     padding: 10px;
+    color: black;
 }
 .about-tekst{
     flex: 1;
 }
+.scholen {
+    width: 80%;
+    background-color: #4BB3FD;
+    margin: 50px auto;
+    display: flex;
+    align-items: center;
+    gap: 40px;
+    border-radius: 10px;
+    text-align: center;
+    padding: 10px;
+    color: black;
+}
+.scholen-text {
+    flex: 1;
+}
+.werken {
+    width: 80%;
+    background-color: #4BB3FD;
+    margin: 50px auto;
+    display: flex;
+    align-items: center;
+    gap: 40px;
+    border-radius: 10px;
+    text-align: center;
+    padding: 10px;
+    color: black;
+}
+.werken-text {
+    flex: 1;
+}
+.talen {
+    width: 80%;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    border-collapse: collapse;
+}
+td, th {
+    padding: 10px;
+    border: 1px solid;
+}
+.Talentabel {
+    width: 80%;
+    background-color: #4BB3FD;
+    margin: 50px auto;
+    display: flex;
+    align-items: center;
+    gap: 40px;
+    border-radius: 10px;
+    text-align: center;
+    padding: 10px;
+    color: black;
+}
+.talentabel {
+    flex: 1;
+}
 .ronde-afbeelding {
     float: left;
-    margin: 0 1rem 1rem 0;
+    margin: 1rem 1rem 1rem 1rem;
     border-radius: 20px;
     height: auto;
     object-fit: cover;
@@ -28,7 +88,7 @@
     width: 200px; height: auto;
 
 }
-h2, h3 {
+h1, h2, h3 {
     text-align: center;
 }
 P {
@@ -42,4 +102,18 @@ P {
 .flex-list li {
     text-align: center;
     list-style-position: inside;
+}
+.talen {
+    text-align: center;
+    margin-left: auto;
+    margin-right: auto;
+    border: 2px solid;
+    border-collapse: collapse;
+}
+html {
+    scroll-behavior: smooth;
+}
+footer {
+    background-color: #00487C;
+    color: white;
 }
