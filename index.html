@@ -1,105 +1,65 @@
 <!DOCTYPE html>
-<html lang="nl">
+<html lang="nl" xmlns="http://www.w3.org/1999/html">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>CV</title>
     <link rel="stylesheet" href="css/style.css">
-    <script src="JavaScript/Animation.js"></script>
+
 </head>
-<header>
-
-</header>
-<body id="top">
-<div class="profiel">
-    <a href="https://www.linkedin.com/in/evan-sukmanov" target="_blank">
-    <img src="images/IMG-20251027-WA0013.jpg" alt="Foto van Evan" class="ronde-afbeelding">
-    </a>
-    <div class="about-tekst">
-    <h1>Evan Sukmanov </h1>
-        <h2>About Me</h2>
-        <p>Mijn naam is Evan Sukmanov, ik ben 20 jaar en woon in Piringen.<br>
-            Momenteel volg ik de opleiding Programmeren aan PXL. Ik heb werkervaring opgedaan in een magazijn en tijdens tuinonderhoud.<br>
-            Ik ben gemotiveerd, leergierig en werk graag samen in een team.<br>
-            Daarnaast spreek ik vloeiend Nederlands en Engels, en beschik ik over basiskennis Frans.</p>
-    </div>
-</div>
-<h1>Opleidingen</h1>
-<div class="scholen">
-    <div class="scholen-text">
-
-        <h3>Tuin- en Landbouw PIBO</h3>
-            <p>Tuinbouw</p>
-            <p>Mechanisatie</p>
-        <h3>Hogeschool PXL</h3>
-            <p>Programmeren</p>
-    </div>
-</div>
-<h1>Werkervaring</h1>
-<div class="werken">
-    <div class="werken-text">
-        <h3>Magazijnmedewerker</h3>
-            <ul class="flex-list">
-                <li>Dozen sorteren</li>
-                <li>Producten verpakken</li>
-                <li>Producten repareren</li>
-            </ul>
-        <h3>Tuinbouw</h3>
-            <ul class="flex-list">
-                <li>Tuinaanleg</li>
-                <li>Tuinonderhoud</li>
-            </ul>
-    </div>
-</div>
-    <h1>Vaardigheden</h1>
-
-    <h1>Talenkennis</h1>
-<div class="Talentabel">
-    <div class="talen-tekst"></div>
-    <table class="talen">
-        <thead>
-            <tr>
-                <th>Taal</th>
-                <th>Spreken</th>
-                <th>Schrijven</th>
-                <th>Lezen</th>
-            </tr>
-        </thead>
-        <body>
-        <tr>
-            <td>Nederlands</td>
-            <td>Vloeiend</td>
-            <td>Redelijk</td>
-            <td>Vloeiend</td>
-        </tr>
-        <tr>
-            <td>Engels</td>
-            <td>Vloeiend</td>
-            <td>Vloeiend</td>
-            <td>Vloeiend</td>
-        </tr>
-        <tr>
-            <td>Russisch</td>
-            <td>Goed</td>
-            <td>Redelijk</td>
-            <td>Goed</td>
-        </tr>
-        <tr>
-            <td>Frans</td>
-            <td>Redelijk</td>
-            <td>Matig</td>
-            <td>Matig</td>
-        </tr>
-        </body>
-    </table>
-</div>
-</body>
-<footer class="Footerbalk">
-    <p>Evan Sukmanov</p>
-    <p>Hogeschool PXL</p>
+<body>
+<header id="header">
+    <h1 class="logo">Curriculum Vitae</h1>
     <nav>
-        <a href="#top">Terug naar boven
-        </a>
+        <a href="#Werkervaring">Werkervaring</a>
+        <a href="#Opleidingen">Opleidingen</a>
+        <a href="#Talenkennis">Talenkennis</a>
+    </nav>
+</header>
+<main>
+    <div class="container">
+        <div class="left">
+            <h1>Evan Sukmanov</h1>
+                <p>Mijn naam is Evan Sukmanov, ik ben 20 jaar en woon in Piringen. Momenteel volg ik de opleiding Programmeren aan PXL. Ik heb werkervaring opgedaan in een magazijn en tijdens tuinonderhoud. Ik ben gemotiveerd, leergierig en werk graag samen in een team. Daarnaast spreek ik vloeiend Nederlands en Engels, en beschik ik over basiskennis Frans.</p>
+        </div>
+            <a href="https://www.linkedin.com/in/evan-sukmanov/" target="_blank">
+                <img class="foto-evan" src="images/IMG-20251027-WA0013.jpg" height="300" alt="Profielfoto"/>
+            </a>
+    </div>
+    <h1 id="Werkervaring">Werkervaring</h1>
+    <div class="cards-container">
+        <div class="card">
+            <h2 class="card-title">Tuinonderhoud</h2>
+                <img src="https://debiesboschgijsbersgroep.nl/wp-content/uploads/2022/04/IMG-20210709-WA0027-e1650011847795.jpg" height="250" class="card-image" alt="Tuinonderhoud">
+            <div class="card-info">
+                <p>
+                    dfsfsd
+                </p>
+            </div>
+        </div>
+        <div class="card">
+            <h2 class="card-title">Mechanisatie</h2>
+            <img src="https://ericmeijer-mechanisatie.nl/wp-content/uploads/2023/03/mechanisatie-landbouwmachine-.jpg" height="250" class="card-image" alt="Tuinonderhoud">
+            <div class="card-info">
+                <p>
+                    fdfs
+                </p>
+            </div>
+        </div>
+    </div>
+    <article>
+        <h1 id="Opleidingen">Opleidingen</h1>
+    </article>
+    <article>
+        <h1 id="Talenkennis">Talenkennis</h1>
+    </article>
+</main>
+<footer>
+    <h1 class="logo">Curriculum Vitae</h1>
+    <nav>
+        <a href="#header">Terug naar boven</a>
     </nav>
 </footer>
+    <script src="JavaScript/Animation.js"></script>
+</body>
 </html>

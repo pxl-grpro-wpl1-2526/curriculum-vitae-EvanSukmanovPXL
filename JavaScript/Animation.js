@@ -1,17 +1,7 @@
-const animation = new IntersectionAnimation((entries) => {
-    entries.forEach((entry) => {
-        if (entry.isIntersecting) {
-            entry.target.classList.add("in-view")
-        }
-    })
-},
-    {
-    rootMargin: '0px',
-    threshold: [0, 0.1, 1]
-},
-    )
-const tags = document.querySelectorAll("body")
 
-tags.forEach(() => {
-    animation.observe(tags)
-})
+    document.querySelectorAll(".card-image").forEach(img => {
+    img.addEventListener("click", () => {
+        const infoBox = img.nextElementSibling;
+        infoBox.classList.toggle("open");
+    });
+});
