@@ -115,17 +115,80 @@ a {
 .card-info {
     max-height: 0;
     overflow: hidden;
-    transition: max-height 0.5s ease;
+    padding: 0 10px;
+    transition:
+            max-height 0.5s ease,
+            padding-top 0.3s ease,
+            padding-bottom 0.3s ease;
 }
 .card-info.open {
     max-height: 500px;
-    margin-top: 10px;
-}
-.card-info p {
-    margin: 0;
+    padding-top: 10px;
     padding-bottom: 10px;
 }
-
+.info-list li {
+    margin-bottom: 8px;
+}
+.info-list strong {
+}
+.opleidingen-header {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+}
+.opleidingen-image {
+    width: 45%;
+    height: auto;
+    border-radius: 10px;
+    transition: 0.3s ease;
+}
+.opleidingen-list {
+    display: flex;
+    flex-direction: column;
+    gap: 25px;
+    margin: 30px auto;
+    width: 80%;
+}
+.opleidingen-card {
+    background: white;
+    padding: 20px;
+    border-radius: 12px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+    cursor: pointer;
+    transition: box-shadow 0.3s ease;
+}
+.opleidingen-card:hover {
+    box-shadow: 0 6px 18px rgba(0,0,0,0.25);
+}
+.opleidingen-title {
+    margin: 0;
+    font-size: 1.5rem;
+    text-align: center;
+}
+.opleidingen-info {
+    max-height: 0;
+    overflow: hidden;
+    padding: 0 10px;
+    transition:
+        max-height 0.5s ease,
+        padding-top 0.3s ease,
+        padding-bottom 0.3s ease;
+}
+.opleidingen-info.open {
+    max-height: 500px;
+    padding-top: 12px;
+    padding-bottom: 12px;
+}
+.opleidingen-details {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+.opleidingen-details li {
+    margin-bottom: 10px;
+    line-height: 1.4;
+}
 html {
     scroll-behavior: smooth;
 }
