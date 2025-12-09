@@ -189,6 +189,53 @@ a {
     margin-bottom: 10px;
     line-height: 1.4;
 }
+.talen-container {
+    width: 80%;
+    margin: 40px auto;
+}
+.talen-table {
+    width: 100%;
+    border-collapse: collapse;
+    background: white;
+    border-radius: 12px;
+    overflow: hidden;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+}
+/*#012622*/
+.talen-table th {
+    background-color: #E98A15;
+    color: white;
+    padding: 14px;
+    font-size: 1.2rem;
+}
+.talen-table td {
+    padding: 12px;
+    text-align: center;
+    font-size: 1.1rem;
+}
+.talen-table tr:nth-child(even) {
+    background: #f1f1f1;
+}
+.talen-flex {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    margin-top: 25px;
+    justify-content: center;
+}
+.talen-item {
+    background: white;
+    padding: 15px 20px;
+    border-radius: 12px;
+    flex: 1 1 250px;
+    max-width: 300px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+    text-align: center;
+}
+.talen-item h3 {
+    margin: 0 0 10px 0;
+    color: #E98A15;
+}
 html {
     scroll-behavior: smooth;
 }
