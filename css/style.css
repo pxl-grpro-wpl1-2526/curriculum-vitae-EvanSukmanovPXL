@@ -65,7 +65,7 @@ h1 {
     box-shadow: 0 5px 15px #000000;
     transition: box-shadow 0.3s ease;
 }
-  footer {
+footer {
       display: flex;
       justify-content: space-between;
       align-items: center;
@@ -73,17 +73,28 @@ h1 {
       background-color: #E98A15;
       color: white;
 }
-footer .logo {
+.footer-left,
+.footer-right,
+.footer-center {
     flex: 1;
-    text-align: center;
-    color: white;
-    font-size: 2rem;
 }
-a {
-    display: flex;
-    text-decoration-color: white;
-    text-decoration: none;
+.footer-left {
+    text-align: left;
+}
+.footer-right {
+    text-align: right;
+}
+.footer-center {
+    text-align: center;
+    font-weight: bold;
+}
+.top {
     color: white;
+    text-decoration: none;
+    transition: 0.3s ease;
+}
+.top:hover {
+    color: #fcbb60;
 }
 .cards-container {
     display: flex;
@@ -201,7 +212,6 @@ a {
     overflow: hidden;
     box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
 }
-/*#012622*/
 .talen-table th {
     background-color: #E98A15;
     color: white;
@@ -235,6 +245,73 @@ a {
 .talen-item h3 {
     margin: 0 0 10px 0;
     color: #E98A15;
+}
+@media (max-width: 575.98px) {
+    header {
+        flex-direction: column;
+        text-align: center;
+        gap: 10px;
+    }
+    nav {
+        flex-direction: column;
+        gap: 8px;
+    }
+    .container {
+        flex-direction: column;
+        padding: 15px;
+        margin: 10px;
+    }
+    .left {
+        text-align: center;
+    }
+    .foto-evan {
+        width: 90%;
+        max-width: 300px;
+    }
+    .cards-container {
+        flex-direction: column;
+        align-items: center;
+    }
+    .card {
+        width: 100%;
+        max-width: 320px;
+    }
+    .opleidingen-card {
+        width: 100%;
+    }
+    .talen-table {
+        display: none;
+    }
+    .talen-mobile {
+        display: block;
+    }
+    footer {
+        text-align: center;
+    }
+}
+@media (min-width: 576px) and (max-width: 991.98px) {
+    .container {
+        flex-direction: column;
+        text-align: center;
+    }
+    .foto-evan {
+        width: 60%;
+        max-width: 350px;
+    }
+    .cards-container {
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+    .card {
+        width: 45%;
+        max-width: none;
+    }
+    .talen-table {
+        display: table;
+    }
+    .talen-mobile {
+        display: none;
+    }
 }
 html {
     scroll-behavior: smooth;
